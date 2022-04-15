@@ -61,5 +61,11 @@ public class IndexController {
 		return new ResponseEntity<String>("Usuario deletado com sucesso", HttpStatus.OK);
 	}
 	
-
+	/*CONFIGURAR MAVEN*/
+	/*
+		Nas variaveis de ambiente coloque o caminho da pasta
+		MAVEN_HOME=C://apache-maven-3.5.0
+		em path do windows coloque %MAVEN_HOME%\bin
+		no cmd: mvn -v
+	*/
 }
