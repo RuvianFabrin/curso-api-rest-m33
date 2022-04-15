@@ -1,0 +1,17 @@
+GET http://localhost:8080/usuario/ HTTP/1.1
+
+###
+
+GET http://localhost:8080/usuario/10 HTTP/1.1
+
+###
+
+POST http://localhost:8080/usuario/ HTTP/1.1
+content-type: application/json
+
+{
+  "id": 12,
+  "login": "Ruvian Fabrin",
+  "senha": "225544",
+  "nome": "Ruvian"
+}
