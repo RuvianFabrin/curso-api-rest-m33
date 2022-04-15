@@ -1,8 +1,6 @@
 package curso.api.rest.controller;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -67,5 +65,16 @@ public class IndexController {
 		MAVEN_HOME=C://apache-maven-3.5.0
 		em path do windows coloque %MAVEN_HOME%\bin
 		no cmd: mvn -v
+		//Para criar o war ou jar - no pow.xml: <packaging>
+		no cmd: mvn package
+
+		//Diferença entre o jar e o war
+		//jar - é executado por linha de comando, e se fechado a linha de comando, o jar é fechado, pode ser executado clicando duas vezes no jar, nesse caso tem que matar o processo no gerenciado de tarefas.
+		
+		//war - é executado por linha de comando, e se fechado a linha de comando, o war não é fechado
+
+		//para executar
+		// na pasta target do projeto
+		// no cmd: java -jar target/projeto.jar
 	*/
 }
