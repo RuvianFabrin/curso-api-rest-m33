@@ -15,3 +15,14 @@ content-type: application/json
   "senha": "225544",
   "nome": "Ruvian"
 }
+
+
+PUT http://localhost:8080/usuario/ HTTP/1.1
+content-type: application/json
+
+{
+  "id": 1,
+  "login": "Ruvian Fabrin Martins",
+  "senha": "225544",
+  "nome": "Ruvian"
+}
