@@ -22,6 +22,8 @@ public class IndexController {
 	@Autowired /* Se Fosse CDI seria @Inject */
 	private UsuarioRepository usuarioRepository;
 
+	//Costumizar URL - @GetMapping(value = "/{id}/umNome/{venda}",produces = "application/json")
+	//init(@PathVariable(value = "id") Long id, @PathVariable(value = "venda") Long nome)
     @GetMapping(value = "/{id}",produces = "application/json")
     public ResponseEntity <Usuario> init(@PathVariable(value = "id") Long id) {		
     	
