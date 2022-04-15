@@ -16,6 +16,7 @@ content-type: application/json
   "nome": "Ruvian"
 }
 
+###
 
 PUT http://localhost:8080/usuario/ HTTP/1.1
 content-type: application/json
@@ -26,3 +27,7 @@ content-type: application/json
   "senha": "225544",
   "nome": "Ruvian"
 }
+
+###
+
+DELETE http://localhost:8080/usuario/10 HTTP/1.1

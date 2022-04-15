@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +36,7 @@ public class IndexController {
         return new ResponseEntity<Usuario>(usuario,HttpStatus.OK);
     }
 
+
 	@GetMapping(value = "/", produces = "application/json")//Pesquisa
 	public ResponseEntity<List<Usuario>> usuario() {
 		List<Usuario> list = (List<Usuario>) usuarioRepository.findAll();
@@ -53,5 +55,11 @@ public class IndexController {
 		return new ResponseEntity<Usuario>(usuarioSalvo, HttpStatus.OK);
 	}
 
+	@DeleteMapping(value = "/{id}", produces = "application/json") //Deleta
+	public ResponseEntity<String> deletar(@PathVariable(value = "id") Long id) {
+		usuarioRepository.deleteById(id);
+		return new ResponseEntity<String>("Usuario deletado com sucesso", HttpStatus.OK);
+	}
+	
 
 }
