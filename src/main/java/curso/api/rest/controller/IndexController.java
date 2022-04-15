@@ -70,11 +70,17 @@ public class IndexController {
 
 		//Diferença entre o jar e o war
 		//jar - é executado por linha de comando, e se fechado a linha de comando, o jar é fechado, pode ser executado clicando duas vezes no jar, nesse caso tem que matar o processo no gerenciado de tarefas.
-		
-		//war - é executado por linha de comando, e se fechado a linha de comando, o war não é fechado
 
-		//para executar
+		//para executar JAR
 		// na pasta target do projeto
-		// no cmd: java -jar target/projeto.jar
+		// no cmd: java -jar projeto.jar
+
+
+		//war - é um arquivo compactado, implantavel no servidor		
+		//Copie o arquivo war para a pasta webapps do tomcat
+		//Inicie o tomcat - startup.bat
+		//Acesse o endereço http://localhost:8080/projeto/
+
+		
 	*/
 }
